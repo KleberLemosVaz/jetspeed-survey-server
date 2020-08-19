@@ -153,7 +153,7 @@ app.post('/send',(req,res) =>{
 
 })
 
-app.listen(`${process.env.APP_URL}`,() => console.log(`Running`))
+app.listen(process.env.PORT || 3333)
 
 
 
