@@ -50,7 +50,7 @@ app.post('/send',(req,res) =>{
     transporter.sendMail({
                     
             from:'Pesquisa Online Jet Speed <jetspeedbrasil@gmail.com>',
-            to:[`${process.env.EMAIL_RECIPIENT_1}`],
+            to:[`${process.env.EMAIL_RECIPIENT_1}`,`${process.env.EMAIL_RECIPIENT_2}`],
             subject:'Pesquisa Online Jet Speed',
             html:`
             <html>
