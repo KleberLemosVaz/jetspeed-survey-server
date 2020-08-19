@@ -12,8 +12,6 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const port = 3333
-
 app.get('/',(req,res) => res.send('Hello World'))
 
 app.post('/send',(req,res) =>{
@@ -155,7 +153,7 @@ app.post('/send',(req,res) =>{
 
 })
 
-app.listen(port,() => console.log(`Running on port ${port}`))
+app.listen(`${process.env.APP_URL}`,() => console.log(`Running`))
 
 
 
